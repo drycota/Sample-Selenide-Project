@@ -1,2 +1,15 @@
-# Sample-Selenide-Project
-Sample Selenide Project
+# sampleSeleniumGRID
+
+
+* Download selenium-server-standalone.jar 
+https://www.seleniumhq.org/download/
+* Download binraies for browser and put them in the same folder with selenium-server-standalone.jar
+1) https://github.com/mozilla/geckodriver/releases
+2) http://chromedriver.chromium.org/
+* Start GRID server
+```
+java -jar selenium-server-standalone-3.13.0.jar -role hub
+java -jar selenium-server-standalone-3.13.0.jar -role node
+```
+* Run test
+```mvn clean test```
