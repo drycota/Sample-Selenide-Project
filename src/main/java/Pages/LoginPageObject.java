@@ -16,6 +16,5 @@ public class LoginPageObject {
         $(By.xpath(userNameXpath)).sendKeys(login);
         $(By.xpath(userPassXpath)).sendKeys(password);
         $(By.xpath(loginButtonXpath)).sendKeys(Keys.ENTER);
-
     }
 }
